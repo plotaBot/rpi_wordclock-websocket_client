@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+	<head>
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" media="screen,projection" />
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+		<meta charset="utf-8"/>
+		<title> Fire That Work</title>
+	</head>
+
+	<body>
+		<ul id="dropdown0" class="dropdown-content">
+			<li><a href="esp_status">ESP8266 status</a></li>
+			<li><a href="restart">Restart</a></li>
+			<li><a href="restart">Configure Access Point</a></li>
+			<li><a href="upload">Upload files</a></li>
+			<li><a href="edit">Edit files</a></li>
+			<li class="divider"></li>
+			<li><a href="restart">RESET</a></li>
+		</ul>
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="esp_status">ESP8266 status</a></li>
+			<li><a href="restart">Restart</a></li>
+			<li><a href="restart">Configure Access Point</a></li>
+			<li><a href="upload">Upload files</a></li>
+			<li><a href="edit">Edit files</a></li>
+			<li class="divider"></li>
+			<li><a href="restart">RESET</a></li>
+		</ul>
+		<nav class="blue light-blueXXX lighten-1XXX" role="navigation" id="mc-nav">
+			<div class="nav-wrapper container">
+				<a id="logo-container" href="#" class="brand-logo">Fire That Work</a>
+
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#" class="mc-navlink" data-pane="pane1">In The Air</a></li>
+					<li><a class="dropdown-button" href="#" data-activates="dropdown0" data-constrainwidth="false" data-hover="true">Settings<i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+
+				<ul id="nav-mobile" class="side-nav">
+					<li><a href="#" class="mc-navlink" data-pane="pane1">In The Air</a></li>
+					<li><a class="dropdown-button" href="#" data-activates="dropdown1">Settings<i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+			</div>
+		</nav>
+		
+		<div class="container mc_pane" id="pane0">
+			<div class="section">
+				<div class="row" id="mc-wsloader">
+					<div class="col">
+						<div class="preloader-wrapper active">
+							<div class="spinner-layer spinner-blue-only">
+								<div class="circle-clipper left">
+									<div class="circle"></div>
+								</div>
+								<div class="gap-patch">
+									<div class="circle"></div>
+								</div>
+								<div class="circle-clipper right">
+									<div class="circle"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row hide" id="mc-wserror">
+					<div class="col">
+						<div>Error on websocket connect.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container mc_pane hide" id="pane1">
+			<div class="section">
+				<div class="row">
+					<div class="col 1">
+						<a class="btn waves-effect waves-light btn_mode_static blue" name="action" multi="1">b00m all checked
+							<i class="material-icons left">send</i>
+						</a>
+					</div>
+				</div>
+					
+				<div class="row"><div id="ignite"></div></div>
+			</div>
+		</div>
+		
+		<footer class="page-footer blue">
+			<div class="footer-copyright">
+				<div class="container">© 2017
+				<a class="grey-text text-lighten-4 right" href="#">Project home</a>
+				</div>
+			</div>
+		</footer>
+		
+		<style type="text/css">
+			.btn_grid {
+				margin: 3px 0;
+			}
+		</style>
+	
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
